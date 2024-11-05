@@ -1,0 +1,308 @@
+nav {
+    background-color: #b9c084;
+    padding: 10px 0;
+
+}
+
+.navsecundaria {
+    background-color: rgb(156, 152, 105);
+    box-shadow: 0 4px 8px rgba(244, 250, 194, 0.1);
+    transition: transform 0.3s, box-shadow 0.3s;
+    margin-bottom: 8px;
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+
+}
+
+nav ul li {
+    position: relative;
+    /* Necessário para o posicionamento do dropdown */
+    margin: 0 15px;
+}
+
+nav ul li a {
+    font-family: "New Amsterdam", sans-serif;
+    font-weight: 300;
+    font-style: normal;
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+    font-size: 30px;
+    padding: 10px;
+    display: block;
+    /* Torna o link clicável em toda a área */
+    transition: color 0.3s;
+}
+
+
+.btn-login{
+    cursor: pointer;
+    border: 0px;
+    padding: 10px;
+    display: inline-block;
+    background-color: #999d73;
+    color: rgb(252, 247, 154);
+    font-size: 20px;
+    font-family: "New Amsterdam", sans-serif;
+    font-style: normal;
+    border-radius: 50px;
+}
+nav ul li a:hover {
+    color: #fffffc;
+}
+
+/* Estilo do dropdown */
+nav ul li .dropdown-content {
+    display: none;     /* Esconde o submenu inicialmente */
+    position: absolute;     /* Posiciona o submenu em relação ao item pai */
+    background-color: #b4b382;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    z-index: 1;     /* Garante que o submenu fique acima de outros elementos */
+    min-width: 200px;
+    padding: 0;
+}
+
+nav ul li .dropdown-content li {
+    margin: 0;
+}
+
+nav ul li .dropdown-content li a {
+    padding: 10px 15px;
+}
+
+nav ul li .dropdown-content li a:hover {
+    background-color: #9f9d79; /* Cor de fundo ao passar o mouse sobre o submenu */
+}
+
+/* Exibe o submenu ao passar o mouse sobre o item principal */
+nav ul li:hover .dropdown-content {
+    display: block;
+}
+
+
+
+footer {
+background-color: #c2a146;
+color: rgb(0, 0, 0);
+padding: 40px 0;
+font-family: Arial, sans-serif;
+}
+footer-container {
+display: flex;
+justify-content: space-between;
+flex-wrap: wrap;
+max-width: 1200px;
+margin: 0 auto;
+padding: 0 20px;
+}
+footer-section {
+flex-basis: 23%; 
+margin-bottom: 20px;
+}
+footer-section h4 {
+margin-bottom: 15px;
+font-size: 18px;
+color: #ff6347;
+}
+footer-section p, footer-section ul {
+margin: 0;
+padding: 0;
+line-height: 1.6;
+}
+footer-section ul {
+list-style-type: none;
+}
+footer-section ul li { margin-bottom: 10px; }
+footer-section ul li a { color: #c2a146; text-decoration: none; transition: color 0.3s; }
+footer-section ul li a:hover { color: #c2a146; }
+.social-links a {
+display: inline-block;
+margin-right: 10px; color: white; text-decoration: none; transition: color 0.3s; }
+social-links a:hover { color:#c2a146 ; }
+
+.footer-bottom { text-align: center; margin-top: 20px; padding: 10px 0; border-top: 1px solid #444; font-size: 14px;
+.footer-bottom p { margin: 0; }
+}
+
+/* Estilos gerais da página */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 0;
+    }
+    /* Container da galeria usando Flexbox */
+    .gallery-container {
+    display: flex; /* Ativa o Flexbox */
+    justify-content: space-around; /* Distribui os itens com espaço ao redor "/
+    flex-wrap: wrap; /* Permite que os itens quebrem linha se não couberem */ padding: 20px;
+    }
+    /* Cada item da galeria */
+    .gallery-item {
+    margin: 30px;
+    border: 2px solid #000000;
+    border-radius: 5px;
+    overflow: hidden;
+    width: 700px; /* Define uma largura fixa para cada item */
+    }
+    /* Estilos para as imagens */
+    .gallery-item img {
+    width: 100%; 
+    }
+    
+    * Estilo das dicas e produtos */
+.dicas {
+    text-align: center; /* Centraliza o título */
+    padding: 20px; /* Espaçamento interno da seção */
+}
+
+.card-container {
+    display: flex; /* Usa flexbox para dispor os cards em linha */
+    justify-content: center; /* Centraliza os cards */
+    gap: 20px; /* Espaçamento entre os cards */
+    margin-top: 20px; /* Margem superior para separar do título */
+}
+
+.card {
+    background-color: #f3f3de; /* Cor de fundo do card */
+    border: 1px solid #95c99c; /* Borda dos cards */
+    border-radius: 8px; /* Cantos arredondados */
+    padding: 20px; /* Espaçamento interno do card */
+    width: 30%; /* Largura dos cards (ajuste conforme necessário) */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Sombra suave para os cards */
+    text-align: center; /* Centraliza o texto dentro dos cards */
+}
+
+.card h3 {
+    margin-bottom: 10px; /* Espaçamento abaixo do título do card */
+}
+
+.card p {
+    font-size: 0.9em; /* Tamanho da fonte do parágrafo */
+}
+
+
+/* Estilização basica para o corpo da pagina */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #be9a52;
+    padding: 20px;
+    }
+    /* Estilo para o container que envolve o formulário */
+    .container {
+    width: 100%;
+    max-width: 400px;
+    background:rgb(232, 229, 229);
+    padding: 20px;
+    margin: 0 auto;
+    border-radius: 8px;
+    box-shadow: 0 0 10px ☐ rgb(195, 173, 95);}
+
+    main {
+        background-color: #fff;
+        padding: 20px;
+        border-radius: 10px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        Estiliza a tabela do carrinho
+        table {
+        width: 100%;
+        border-collapse: collapse;
+        margin-bottom: 20px;}
+        }
+        th, td {
+        padding: 10px;
+        text-align: center;
+        border-bottom: 1px solid #ddd;
+        }
+        th {
+        background-color: #f4f4f4;
+        font-weight: bold;
+        }
+        input.quantidade{
+        width: 50px;
+        padding: 5px;
+        text-align: center;}
+        
+        
+        button.remover-produto {
+        background-color: #e74c3c;
+        color: white;
+        border: none;
+        padding: 10px;}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        /* Estilo da seção de produtos */
+.produtos {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 20px;
+    text-align: center;
+}
+
+h2 {
+    text-align: center;
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+.card {
+    background-color: #fff;
+    border: 1px solid #95c99c;
+    border-radius: 8px;
+    padding: 20px;
+    width: calc(33.33% - 40px);
+    margin: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.card img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+}
+
+.card h3 {
+    margin-top: 10px;
+}
+
+.card p {
+    font-size: 0.9em;
+}
+
+/* Estilo do botão */
+button {
+    background-color: #e8d65e;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 15px;
+    cursor: pointer;
+    margin-top: 10px;
+}
+
+button:hover {
+    background-color: #edc65b;
+}
